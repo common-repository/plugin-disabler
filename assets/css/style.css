@@ -1,0 +1,85 @@
+.onoffswitch {
+    position: relative; width: 100%;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none !important;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border-radius: 20px;
+    width: 50px;
+    float: left;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "OFF";
+    padding-left: 10px;
+    background-color: #ED7474; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "ON";
+    padding-right: 10px;
+    background-color: #2ABD17; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: none; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    display: none;
+}
+
+.onoffswitch span.plugin-name{
+    float: left;
+    text-align: left;
+    height: 30px;
+    min-width: 100px;
+    vertical-align: middle;
+    display: block;
+    padding: 7px 0px 0px 10px;
+}
+
+.pi-settings-button {
+    padding: 0 12px 2px;
+    background: #0085ba;
+    border-color: #006a95 #00648c #00648c;
+    box-shadow: inset 0 -1px 0 #00648c;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #005d82, 1px 0 1px #005d82, 0 1px 1px #005d82, -1px 0 1px #005d82;
+    border-radius: 3px;
+    white-space: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    margin-top:15px;   
+    padding: 5px 20px;
+}
+.mu-snippet{
+    width: 90%;
+    min-height: 200px
+}
+
+.wpeh-pi-settings table{
+    width: 90%;
+}
+.wpeh-pi-settings table td{
+    vertical-align: middle;
+}
